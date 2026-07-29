@@ -26,7 +26,7 @@ const ProductCard = () => {
               <h3 className="text-lg font-normal mt-2 group-hover:font-bold ">{produit.name}</h3>
               <div className="flex items-center justify-start">
                 <p
-                  className={`text-xl font-semibold mt-1 pl-3 ${produit.edit ?? ''} transition-all duration-300 group-hover:hidden`}
+                  className={`text-xl font-semibold mt-1 pl-3 ${produit.edit ?? ''} transition-all duration-300`}
                 >
                   ${produit.price}
                 </p>
@@ -36,7 +36,11 @@ const ProductCard = () => {
                   </p>
                 )}
               </div>
-              <button className="hidden group-hover:flex bg-red-500 text-white py-3 px-15 rounded-2xl transition-all duration-300 justify-center cursor-pointer">
+              <button className="mt-3 w-full rounded-2xl bg-red-500 py-3 text-white cursor-pointer
+                   transition-opacity duration-300
+                   lg:opacity-0 lg:invisible
+                   lg:group-hover:opacity-100 lg:group-hover:visible
+                   lg:group-focus-within:opacity-100 lg:group-focus-within:visible">
                 Add to Cart
               </button>
             </div>
