@@ -1,46 +1,54 @@
 import type { ProductCard } from '../types/productCard'
+import beats from '../assets/beats.jpg'
+import rockymountain from '../assets/rockymountain.jpg'
+import beats2 from '../assets/beats-2.jpg'
+import gameConsole from '../assets/Game-Console.jpg'
+import whiteEliteBook from '../assets/White-EliteBook.jpg'
+import goreWear from '../assets/gore-wear.jpg'
+import wirelessAudio from '../assets/wireless-audio.jpg'
+import pinkWatch from '../assets/pinkWatch.jpg'
 
 export const productCard: ProductCard[] = [
   {
-    image: '/src/assets/beats.jpg',
+    image: beats,
     name: 'Beats',
     price: 995,
   },
 
   {
-    image: '/src/assets/rocky-mountain.jpg',
+    image: rockymountain,
     name: 'Rocky Mountain',
     price: 8250,
   },
   {
-    image: '/src/assets/Game-Console.jpg',
+    image: gameConsole,
     name: 'Game Console Controller Cable',
     price: 8250,
   },
   {
-    image: '/src/assets/White-EliteBook.jpg',
+    image: whiteEliteBook,
     name: 'White EliteBook Tablet 810',
     price: 9950,
     discount: 3500,
     edit: 'text-gray-300 line-through',
   },
   {
-    image: '/src/assets/gore-wear.jpg',
+    image: goreWear,
     name: 'Gore Wear C7',
     price: 499,
   },
   {
-    image: '/src/assets/wireless-audio.jpg',
+    image: wirelessAudio,
     name: 'Wireless Audio System Multiroom 360',
     price: 8250,
   },
   {
-    image: '/src/assets/beats-2.jpg',
+    image: beats2,
     name: 'Beats',
     price: 9950,
   },
   {
-    image: '/src/assets/pinkWatch.jpg',
+    image: pinkWatch,
     name: 'Smartwatch 2.0 LTE Wifi',
     price: 499,
   },
