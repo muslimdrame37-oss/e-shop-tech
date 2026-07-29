@@ -6,9 +6,9 @@ import Container from './Container'
 import { useState } from 'react'
 
 const Navbar = () => {
-  const [mobileDrowerOpen, setMobileDrowerOpen] = useState(false);
+  const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
   const toggleNavbar = () => {
-    setMobileDrowerOpen(!mobileDrowerOpen);
+    setMobileDrawerOpen(prev => !prev);
   };
   return (
     <nav className="py-8">
@@ -34,20 +34,20 @@ const Navbar = () => {
             <div className="flex items-center justify-center gap-3">
               <Search size={23} />
               <ShoppingBag size={23} />
-              <button onClick={toggleNavbar} className="lg:hidden">
+              <button onClick={toggleNavbar} className="lg:hidden" aria-label="Menu" aria-expanded={mobileDrawerOpen}>
 
-                {mobileDrowerOpen ? <CircleX /> : <Menu />}
+                {mobileDrawerOpen ? <CircleX /> : <Menu />}
               </button>
             </div>
           </div>
         </div>
 
-        {mobileDrowerOpen && (
-          <div className="fixed right-0 z-20 bg-white w-full p-12 flex flex-col justify-center items-center lg:hidden">
+        {mobileDrawerOpen && (
+          <div className="top-full right-0 z-20 bg-white w-full p-12 flex flex-col justify-center items-center lg:hidden">
             <ul className='text-black text-center'>
               {navItems.map((item, index) => (
                 <li key={index} className="py-4">
-                  <a href={item.url}>{item.name}</a>
+                  <Link to={item.url} onClick={() => setMobileDrawerOpen(false)}>{item.name}</Link>
                 </li>
               ))}
             </ul>
