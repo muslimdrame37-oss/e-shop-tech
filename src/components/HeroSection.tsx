@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom'
+
 import Container from './Container'
 import casquehero from '../assets/casque-hero.png'
 
@@ -17,7 +17,7 @@ const HeroSection = () => {
       <img
         src={casquehero}
         alt=""
-        className="absolute top-0  w-100  left-18 lg:top-5 lg:left-53 lg:w-300"
+        className="absolute top-0  w-100  left-18 lg:top-5 lg:left-53 lg:w-300 pointer-events-none"
       />
       <div className="absolute bottom-18 right-0 hidden lg:flex flex-col items-end text-md w-110 pr-20">
         <h3 className="text-black font-semibold">Description</h3>
@@ -27,9 +27,9 @@ const HeroSection = () => {
         </p>
       </div>
       <div className="mb-3">
-        <Link to={''} className="text-white bg-red-600 px-3 py-4 lg:px-15 rounded-3xl">
+        <a href={"#categories"} className="text-white bg-red-600 px-3 py-4 lg:px-15 rounded-3xl">
           Shop By Categorie
-        </Link>
+        </a>
       </div>
     </Container>
   )

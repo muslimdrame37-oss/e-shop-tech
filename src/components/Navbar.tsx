@@ -27,9 +27,9 @@ const Navbar = () => {
           </ul>
 
           <div className="flex items-center gap-8">
-            <Link to={''} className="text-md">
+            <button className="text-md opacity-50 cursor-not-allowed" disabled title="Bientôt disponible">
               Login
-            </Link>
+            </button>
 
             <div className="flex items-center justify-center gap-3">
               <Search size={23} />

@@ -7,7 +7,7 @@ export const promoSection: PromoSection[] = [
     bgColor: 'bg-red-700',
     image: redSpeaker,
     imageClasses:
-      'absolute -top-27 left-3/5 transform -translate-x-1/2 w-60 h-60 md:w-210 md:left-70 md:-top-60 lg:w-280 lg:-top-65 lg:left-135 object-cover',
+      'absolute -top-27 left-3/5 transform -translate-x-1/2 w-60 h-60 md:w-210 md:left-70 md:-top-60 lg:w-280 lg:-top-65 lg:left-115 pointer-events-none object-cover',
     discount: '20 % OFF',
     titleLine1: 'Fine',
     titleLine2: 'Smile',
@@ -23,7 +23,7 @@ export const promoSection: PromoSection[] = [
     bgColor: 'bg-green-600',
     image: greenWatch,
     imageClasses:
-      'absolute -top-34 left-3/5 transform -translate-x-1/2 w-60 h-60 md:w-130 md:left-62 md:-top-60 lg:w-280 lg:-top-65 lg:left-170 object-cover',
+      'absolute -top-34 left-3/5 transform -translate-x-1/2 w-60 h-60 md:w-130 md:left-62 md:-top-60 lg:w-280 lg:-top-65 lg:left-150 pointer-events-none object-cover',
     discount: '20 % OFF',
     titleLine1: 'Happy',
     titleLine2: 'House',

@@ -11,10 +11,14 @@ const HomePage = () => {
   return (
     <div>
       <HeroSection />
-      <CategorieSection />
+      <section id="categories">
+        <CategorieSection />
+      </section>
       <SectionIcon />
       <SectionPromo data={promoSection[0]} className="mt-25" />
-      <ProductCard />
+      <section id="products">
+        <ProductCard />
+      </section>
       <SectionPromo data={promoSection[1]} className="mt-20" />
       <BlogSection />
       <PartnersSection />
