@@ -2,17 +2,13 @@
 
 Landing page e-commerce responsive, construite avec React, TypeScript et Tailwind CSS.
 
-**Démo en ligne** : _à venir_
+[**Démo en ligne**](https://e-shop-tech.vercel.app/)
 
 ---
 
 ## Aperçu
 
-<!-- Ajoute une capture d'écran ici :
-     1. Place l'image dans un dossier `screenshots/` à la racine
-     2. Remplace la ligne ci-dessous par : ![Aperçu](screenshots/apercu.png)  -->
-
-_Capture d'écran à ajouter._
+![Aperçu de la page d'accueil](screenshot/apercu.png)
 
 ---
 
@@ -60,7 +56,7 @@ Le principe directeur : **une section = un composant + un fichier de données + 
 ## Installation
 
 ```bash
-git clone https://github.com/<ton-compte>/e-shop-tech.git
+git clone https://github.com/muslimdrame37-oss/e-shop-tech.git
 cd e-shop-tech
 npm install
 npm run dev
