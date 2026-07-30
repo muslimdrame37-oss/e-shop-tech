@@ -31,7 +31,7 @@ const ProductCard = () => {
                   ${produit.price}
                 </p>
                 {produit.discount && (
-                  <p className="text-xl font-semibold mt-1 pl-3 group-hover:hidden transition-all duration-300">
+                  <p className="text-xl font-semibold mt-1 pl-3 transition-all duration-300">
                     ${produit.discount}
                   </p>
                 )}
